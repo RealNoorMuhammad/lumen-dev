@@ -722,8 +722,8 @@ body {
 
 
 .step-icon {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     background: linear-gradient(135deg, #9945FF 0%, #14F195 100%);
     border-radius: 20px;
     display: flex;
@@ -739,6 +739,9 @@ body {
     fill: white;
     width: 32px;
     height: 32px;
+    position: relative;
+    left: 4px;
+    top: 1px;
     display: block;
     margin: 0 auto;
 }
