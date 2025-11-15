@@ -95,17 +95,9 @@ Lumen/
 
 ![Lumen](Lumen.png)
 
-#### Icon1
-
-![Icon1](icon1.png)
-
 ### Gallery
 
 #### About
-
-**About Hero**
-
-![About Hero](assets/Pics/About/about-hero.png)
 
 **Achiev Img**
 
