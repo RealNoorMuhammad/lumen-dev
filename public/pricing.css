@@ -1,0 +1,655 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo-slider-section{
+    background-color: #f8f9fa;
+    padding: 60px 0;
+    width: 100%;
+}
+
+.fade-left {
+    background: none;
+}
+
+.fade-right {
+    background: none;
+}
+
+
+/* Pricing Section Styles */
+#pricing-tables {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0px 0px;
+    text-align: center;
+}
+
+#pricing-tables h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#pricing-tables > p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 60px;
+}
+
+/* Container for pricing cards - side by side layout */
+.pricing-cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Pricing Cards Container */
+#pricing-left,
+#pricing-right {
+    flex: 1;
+    min-width: 300px;
+    max-width: 450px;
+}
+
+/* Pricing Card Styles */
+.pricing-card {
+    background: white;
+    border-radius: 12px;
+    padding: 40px 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.plan-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.plan-description {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.pricing-section {
+    margin-bottom: 30px;
+}
+
+.price {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    display: block;
+}
+
+.price-description {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 5px;
+}
+
+.cta-button {
+    background: #9945FF;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.cta-button:hover {
+    background: #7c3aed;
+}
+
+.features-list {
+    list-style: none;
+    flex-grow: 1;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.checkmark {
+    color: #666;
+    margin-right: 12px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Pricing Comparison Table Styles */
+.pricing-comparison-section {
+    background: #f8f9fa;
+    padding: 20px 20px;
+    margin-top: 50px;
+}
+
+.comparison-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    background: #1a1a2e;
+    border-radius: 16px;
+    padding: 60px 40px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.comparison-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.comparison-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.comparison-btn {
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.comparison-btn.primary {
+    background: #9945FF;
+    color: white;
+}
+
+.comparison-btn.primary:hover {
+    background: #7c3aed;
+}
+
+.comparison-btn.secondary {
+    background: white;
+    color: #1a1a2e;
+}
+
+.comparison-btn.secondary:hover {
+    background: #f0f0f0;
+}
+
+.comparison-table {
+    background: #16213e;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.table-header {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    background: #0f1419;
+    padding: 20px;
+    font-weight: 700;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.feature-column {
+    text-align: left;
+}
+
+.plan-column {
+    text-align: center;
+}
+
+.table-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    padding: 20px;
+    border-bottom: 1px solid #2a2a3e;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.table-row:hover {
+    background: #1e1e2e;
+}
+
+.table-row.highlighted {
+    background: #2a2a3e;
+}
+
+.feature-name {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.plan-value {
+    text-align: center;
+    font-weight: 500;
+}
+
+.info-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    background: #9945FF;
+    color: white;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: help;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Pricing Tables Section - Add proper spacing */
+    #pricing-tables {
+        padding: 10px 0px 0px;
+    }
+    
+    #pricing-left,
+    #pricing-right {
+        width: 100%;
+        margin: 0 0 30px 0;
+    }
+    
+    .pricing-card {
+        padding: 30px 20px;
+    }
+    
+    .comparison-btn{
+        font-size: 1rem;
+    }
+
+    .pricing-cards-container {
+        padding: 0 20px;
+    }
+    
+    #pricing-tables h1 {
+        font-size: 2.5rem;
+    }
+    
+    .comparison-title {
+        font-size: 2rem;
+    }
+    
+    .comparison-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .table-header,
+    .table-row {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .feature-name {
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 10px;
+        font-weight: 600;
+    }
+    
+    .plan-value {
+        margin-bottom: 5px;
+    }
+    
+    /* Hide comparison table on mobile */
+    .pricing-comparison-section {
+        display: none;
+    }
+}
+
+/* What's Included Section */
+.included-section {
+    background: #f8f9fa;
+    padding: 40px 20px 120px;
+}
+
+.included-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.included-title {
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: #0f1419;
+    margin-bottom: 24px;
+}
+
+.included-actions {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+.included-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.included-card {
+    background: #ffffff;
+    border: 1px solid #e9ecef;
+    border-radius: 16px;
+    padding: 28px;
+    margin-top: 50px;
+    text-align: left;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+}
+
+.getting-title{
+    text-align: center;
+}
+
+.getting-subtitle{
+    text-align: center;
+}
+
+.included-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f4f2ff;
+    color: #7c3aed;
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+.included-heading {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #0f1419;
+    margin-bottom: 10px;
+}
+
+.included-text {
+    font-size: 0.98rem;
+    color: #4b5563;
+    line-height: 1.6;
+}
+
+@media (max-width: 1024px) {
+    .included-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px) {
+    .included-grid { grid-template-columns: 1fr; }
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    background: #f8f9fa;
+    padding: 0px 20px 40px;
+    margin-bottom: 20px;
+}
+
+.testimonials-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.testimonials-overline {
+    color: #9aa4b2;
+    font-weight: 700;
+    letter-spacing: 1.6px;
+    margin-bottom: 12px;
+}
+
+.testimonials-title {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #0f1419;
+    line-height: 1.1;
+    margin-bottom: 36px;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.testimonial-card {
+    background: #ffffff;
+    border: 1px solid #e9ecef;
+    border-radius: 16px;
+    padding: 28px;
+    text-align: left;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+}
+
+.testimonial-logo {
+    color: #9aa4b2;
+    font-weight: 800;
+    margin-bottom: 16px;
+}
+
+.testimonial-quote {
+    color: #344255;
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+
+.author-name {
+    font-weight: 700;
+    color: #0f1419;
+}
+
+.author-title {
+    color: #6b7280;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 1024px) {
+    .testimonials-grid { grid-template-columns: 1fr; }
+}
+
+/* Getting Started Section */
+.getting-started-section {
+    
+    padding: 20px 20px 0px;
+}
+
+.getting-started-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 24px;
+    background: #ffffff;
+    border: 1px solid #e9ecef;
+    border-radius: 20px;
+    padding: 32px;
+}
+
+.getting-title {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #0f1419;
+    margin-bottom: 10px;
+}
+
+.getting-subtitle {
+    color: #4b5563;
+    margin-bottom: 16px;
+}
+
+.getting-actions { display: flex; gap: 12px; }
+
+.getting-started-right { display: grid; gap: 12px; }
+
+.getting-card {
+    display: block;
+    background: #f7f9ff;
+    border: 1px solid #e0e7ff;
+    border-radius: 12px;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.getting-card .card-title { font-weight: 700; color: #0f1419; margin-bottom: 6px; }
+.getting-card .card-text { color: #4b5563; margin-bottom: 6px; }
+.getting-card .card-link { color: #7c3aed; font-weight: 600; }
+
+/* FAQ Section - Copied from style.css (index.html) */
+.faq-section {
+    background-color: #F8F9FA;
+    padding: 50px 0 50px 0;
+    margin-top: 0px;
+}
+
+.faq-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px 40px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+.faq-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.faq-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    line-height: 1.3;
+}
+
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.faq-item {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+.faq-item:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 28px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-bottom: 1px solid transparent;
+}
+
+.faq-question:hover {
+    background-color: #f8f9fa;
+}
+
+.faq-item.active .faq-question {
+    border-bottom-color: #e9ecef;
+}
+
+.faq-question-text {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+    flex: 1;
+    margin-right: 20px;
+}
+
+.faq-toggle {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #9945FF;
+    transition: transform 0.3s ease, color 0.3s ease;
+    min-width: 24px;
+    text-align: center;
+}
+
+.faq-item.active .faq-toggle {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 300px;
+}
+
+.faq-answer-content {
+    padding: 0 28px 28px 28px;
+}
+
+.faq-answer-content p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #666;
+    margin: 0;
+}
+
+.faq-link {
+    color: #9945FF;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.faq-link:hover {
+    color: #7c3aed;
+}
+
+@media (max-width: 900px) {
+    .getting-started-container { grid-template-columns: 1fr; }
+}
+
+
+[data-scroll-container]::after {
+    content: "";
+    display: block;
+    height: 0px; /* adjust (5vh–20vh) depending on how much footer gets cut */
+  }

@@ -1,0 +1,1387 @@
+/* Refunds Hero Section Styles */
+.refunds-hero-section {
+    background: linear-gradient(135deg, #1a1a2e 0%, #000000 50%, #000000 100%);
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    padding: 100px 0 80px; /* Account for fixed navbar */
+    position: relative;
+    overflow: hidden;
+}
+
+.refunds-hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.refunds-hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+    min-height: 60vh;
+}
+
+/* Left Side - Text Content */
+.refunds-hero-text {
+    color: white;
+    z-index: 2;
+    position: relative;
+}
+
+.refunds-hero-title {
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 30px;
+    background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.refunds-hero-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    color: #EEEEEE;
+    max-width: 500px;
+}
+
+.refunds-hero-cta {
+    background: linear-gradient(135deg, #9945FF 0%, #7B2CBF 100%);
+    color: white;
+    border: none;
+    padding: 18px 36px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 8px 25px rgba(153, 69, 255, 0.3);
+}
+
+.refunds-hero-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 35px rgba(153, 69, 255, 0.4);
+}
+
+.cta-arrow {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.refunds-hero-cta:hover .cta-arrow {
+    transform: translateX(5px);
+}
+
+/* Right Side - Visual Content */
+.refunds-hero-visual {
+    position: relative;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+}
+
+.refunds-hero-visual img{
+    width: 500px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .refunds-hero-content {
+        grid-template-columns: 1fr;
+        gap: 60px;
+        text-align: center;
+    }
+    
+    .refunds-hero-title {
+        font-size: 2.8rem;
+    }
+    
+    .refunds-hero-visual {
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .refunds-hero-section {
+        padding: 80px 0 60px;
+    }
+    
+    .refunds-hero-title {
+        font-size: 2.2rem;
+    }
+    
+    .refunds-hero-description {
+        font-size: 1.1rem;
+    }
+    
+    .refunds-hero-cta {
+        padding: 15px 30px;
+        font-size: 1rem;
+    }
+    
+    .refunds-hero-visual {
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .refunds-hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .refunds-hero-description {
+        font-size: 1rem;
+    }
+    
+    .refunds-hero-cta {
+        padding: 12px 24px;
+        font-size: 0.9rem;
+    }
+    
+    .refunds-hero-visual {
+        height: 250px;
+    }
+}
+
+/* Refunds Features Section */
+.refunds-features-section {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+    position: relative;
+}
+
+.refunds-features-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.refunds-features-card {
+    background: white;
+    border-radius: 20px;
+    padding: 60px 40px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.refunds-features-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1D1616;
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+
+.refunds-features-cta {
+    background: linear-gradient(135deg, #9945FF 0%, #7B2CBF 100%);
+    color: white;
+    border: none;
+    padding: 18px 36px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 8px 25px rgba(153, 69, 255, 0.3);
+    margin-bottom: -15px;
+}
+
+.refunds-features-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 35px rgba(153, 69, 255, 0.4);
+}
+
+.refunds-features-cta .cta-arrow {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.refunds-features-cta:hover .cta-arrow {
+    transform: translateX(5px);
+}
+
+.refunds-features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.feature-block {
+    text-align: center;
+    padding: 20px;
+}
+
+.feature-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+    color: #666;
+    transition: all 0.3s ease;
+}
+
+.feature-block:hover .feature-icon {
+    background: linear-gradient(135deg, #9945FF 0%, #7B2CBF 100%);
+    color: white;
+    transform: translateY(-5px);
+}
+
+.feature-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #1D1616;
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+
+.feature-description {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.6;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+/* Refunds Features Responsive Design */
+@media (max-width: 1024px) {
+    .refunds-features-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+    
+    .refunds-features-title {
+        font-size: 2.2rem;
+    }
+    
+    .refunds-features-card {
+        padding: 50px 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .refunds-features-section {
+        padding: 60px 0;
+    }
+    
+    .refunds-features-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .refunds-features-title {
+        font-size: 1.8rem;
+    }
+    
+    .refunds-features-card {
+        padding: 40px 20px;
+    }
+    
+    .refunds-features-cta {
+        padding: 15px 30px;
+        font-size: 1rem;
+        margin-bottom: 40px;
+    }
+    
+    .feature-icon {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 20px;
+    }
+    
+    .feature-title {
+        font-size: 1.1rem;
+    }
+    
+    .feature-description {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .refunds-features-title {
+        font-size: 1.6rem;
+    }
+    
+    .refunds-features-card {
+        padding: 30px 15px;
+    }
+    
+    .refunds-features-cta {
+        padding: 12px 24px;
+        font-size: 0.9rem;
+    }
+    
+    .feature-icon {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .feature-title {
+        font-size: 1rem;
+    }
+    
+    .feature-description {
+        font-size: 0.85rem;
+    }
+}
+
+/* Refund Pricing Section */
+.refund-pricing-section {
+    background-color: #f8f9fa;
+    padding: 0px 0;
+    position: relative;
+}
+
+.refund-pricing-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.refund-pricing-card {
+    background: white;
+    border-radius: 20px;
+    padding: 50px 40px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e9ecef;
+    position: relative;
+    overflow: hidden;
+}
+
+.refund-pricing-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #1D1616;
+    margin-bottom: 30px;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.refund-pricing-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.refund-pricing-cta {
+    background: linear-gradient(135deg, #9945FF 0%, #7B2CBF 100%);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 6px 20px rgba(153, 69, 255, 0.3);
+}
+
+.refund-pricing-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(153, 69, 255, 0.4);
+}
+
+.refund-pricing-link {
+    color: #9945FF;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.refund-pricing-link:hover {
+    color: #7B2CBF;
+}
+
+.cta-arrow, .link-arrow {
+    font-size: 1.1rem;
+    transition: transform 0.3s ease;
+}
+
+.refund-pricing-cta:hover .cta-arrow,
+.refund-pricing-link:hover .link-arrow {
+    transform: translateX(3px);
+}
+
+.pricing-table-container {
+    margin-top: 30px;
+}
+
+.pricing-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.pricing-table thead {
+    background-color: #f8f9fa;
+}
+
+.pricing-table th {
+    padding: 20px;
+    text-align: left;
+    font-weight: 600;
+    color: #1D1616;
+    border-bottom: 2px solid #e9ecef;
+}
+
+.fee-type-header {
+    width: 60%;
+}
+
+.fee-amount-header {
+    width: 40%;
+    text-align: right;
+}
+
+.pricing-table td {
+    padding: 20px;
+    border-bottom: 1px solid #e9ecef;
+    color: #333;
+}
+
+.fee-type {
+    font-weight: 500;
+    color: #1D1616;
+}
+
+.fee-amount {
+    text-align: right;
+    font-weight: 600;
+    color: #9945FF;
+}
+
+.conversion-note {
+    font-size: 0.9rem;
+    color: #666;
+    font-style: italic;
+    margin-top: 15px;
+    text-align: center;
+}
+
+/* Refund Pricing Responsive Design */
+@media (max-width: 768px) {
+    .refund-pricing-section {
+        padding: 60px 0;
+    }
+    
+    .refund-pricing-card {
+        padding: 40px 20px;
+    }
+    
+    .refund-pricing-title {
+        font-size: 1.8rem;
+    }
+    
+    .refund-pricing-actions {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .refund-pricing-cta {
+        padding: 12px 24px;
+        font-size: 0.9rem;
+    }
+    
+    .refund-pricing-link {
+        font-size: 0.9rem;
+    }
+    
+    .pricing-table th,
+    .pricing-table td {
+        padding: 15px 10px;
+        font-size: 0.9rem;
+    }
+    
+    .fee-amount-header,
+    .fee-amount {
+        text-align: left;
+    }
+}
+
+@media (max-width: 480px) {
+    .refund-pricing-title {
+        font-size: 1.6rem;
+    }
+    
+    .refund-pricing-card {
+        padding: 30px 15px;
+    }
+    
+    .pricing-table th,
+    .pricing-table td {
+        padding: 12px 8px;
+        font-size: 0.85rem;
+    }
+    
+    .conversion-note {
+        font-size: 0.8rem;
+    }
+}
+
+/* Crypto Promotion Section */
+.crypto-promotion-section {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+    position: relative;
+}
+
+.crypto-promotion-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.crypto-promotion-card {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    border-radius: 20px;
+    padding: 60px 40px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.crypto-promotion-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.crypto-promotion-text {
+    color: white;
+    z-index: 2;
+    position: relative;
+}
+
+.promotion-header {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #9945FF;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.promotion-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 40px;
+    background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.promotion-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 40px 0;
+}
+
+.feature-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #EEEEEE;
+}
+
+.feature-check {
+    width: 24px;
+    height: 24px;
+    background: linear-gradient(135deg, #9945FF 0%, #7B2CBF 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.feature-check svg {
+    color: white;
+    width: 12px;
+    height: 12px;
+}
+
+.promotion-actions {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.promotion-cta {
+    background: linear-gradient(135deg, #9945FF 0%, #7B2CBF 100%);
+    color: white;
+    border: none;
+    padding: 18px 36px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 8px 25px rgba(153, 69, 255, 0.3);
+}
+
+.promotion-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 35px rgba(153, 69, 255, 0.4);
+}
+
+.promotion-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.promotion-link:hover {
+    color: #9945FF;
+}
+
+.promotion-cta .cta-arrow,
+.promotion-link .link-arrow {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.promotion-cta:hover .cta-arrow,
+.promotion-link:hover .link-arrow {
+    transform: translateX(5px);
+}
+
+.crypto-promotion-visual {
+    position: relative;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+}
+
+.crypto-promotion-visual img{
+    width: 500px;
+    border-radius: 50px;
+}
+
+/* Crypto Promotion Responsive Design */
+@media (max-width: 1024px) {
+    .crypto-promotion-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+    
+    .promotion-title {
+        font-size: 2.4rem;
+    }
+    
+    .crypto-promotion-visual {
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .crypto-promotion-section {
+        padding: 60px 0;
+    }
+    
+    .crypto-promotion-card {
+        padding: 40px 20px;
+    }
+    
+    .promotion-title {
+        font-size: 2rem;
+    }
+    
+    .promotion-actions {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    
+    .promotion-cta {
+        padding: 15px 30px;
+        font-size: 1rem;
+    }
+    
+    .promotion-link {
+        font-size: 1rem;
+    }
+    
+    .feature-item {
+        font-size: 0.95rem;
+    }
+    
+    .crypto-promotion-visual {
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .promotion-title {
+        font-size: 1.6rem;
+    }
+    
+    .crypto-promotion-card {
+        padding: 30px 15px;
+    }
+    
+    .promotion-cta {
+        padding: 12px 24px;
+        font-size: 0.9rem;
+    }
+    
+    .promotion-link {
+        font-size: 0.9rem;
+    }
+    
+    .feature-item {
+        font-size: 0.9rem;
+    }
+    
+    .crypto-promotion-visual {
+        height: 250px;
+    }
+}
+
+/* Contact Form Section */
+.contact-form-section {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    position: relative;
+}
+
+.contact-form-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.contact-form-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: flex-start;
+}
+
+.contact-form-text {
+    color: #1D1616;
+}
+
+.contact-form-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1D1616;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.contact-form-description {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    max-width: 400px;
+}
+
+.contact-form-image {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    margin-bottom: -400px;
+}
+
+.contact-form-image img{
+    width: 400px;
+    border-radius: 10%;
+}
+
+
+
+.contact-form-wrapper {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e9ecef;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #1D1616;
+    margin-bottom: 8px;
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+    padding: 15px 20px;
+    border: 2px solid #e9ecef;
+    border-radius: 10px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #f8f9fa;
+    transition: all 0.3s ease;
+    font-family: inherit;
+}
+
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+    outline: none;
+    border-color: #9945FF;
+    background-color: white;
+    box-shadow: 0 0 0 3px rgba(153, 69, 255, 0.1);
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+    color: #999;
+}
+
+.form-select {
+    cursor: pointer;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
+    background-position: right 12px center;
+    background-repeat: no-repeat;
+    background-size: 16px;
+    padding-right: 40px;
+}
+
+.form-textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.form-submit {
+    background: linear-gradient(135deg, #9945FF 0%, #7B2CBF 100%);
+    color: white;
+    border: none;
+    padding: 18px 36px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 25px rgba(153, 69, 255, 0.3);
+    margin-top: 10px;
+}
+
+.form-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 35px rgba(153, 69, 255, 0.4);
+}
+
+.form-submit:active {
+    transform: translateY(0);
+}
+
+/* Contact Form Responsive Design */
+@media (max-width: 1024px) {
+    .contact-form-content {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+    
+    .contact-form-title {
+        font-size: 2.2rem;
+    }
+    
+    .contact-form-image {
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-form-section {
+        padding: 60px 0;
+    }
+    
+    .contact-form-wrapper {
+        padding: 30px 20px;
+    }
+    
+    .contact-form-title {
+        font-size: 1.8rem;
+    }
+    
+    .contact-form-description {
+        font-size: 1rem;
+    }
+    
+    .contact-form {
+        gap: 20px;
+    }
+    
+    .form-input,
+    .form-select,
+    .form-textarea {
+        padding: 12px 16px;
+        font-size: 0.95rem;
+    }
+    
+    .form-submit {
+        padding: 15px 30px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-form-title {
+        font-size: 1.6rem;
+    }
+    
+    .contact-form-wrapper {
+        padding: 25px 15px;
+    }
+    
+    .contact-form-image {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .form-input,
+    .form-select,
+    .form-textarea {
+        padding: 10px 14px;
+        font-size: 0.9rem;
+    }
+    
+    .form-submit {
+        padding: 12px 24px;
+        font-size: 0.9rem;
+    }
+}
+
+/* FAQ Section */
+.faq-section {
+    background-color: #F8F9FA;
+    padding: 0px 0 80px 0;
+    margin-top: 80px;
+}
+
+.faq-container {
+    max-width: 1150px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 40px 100px;
+    border-radius: 50px;
+}
+
+.faq-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.faq-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    line-height: 1.3;
+}
+
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.faq-item {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+.faq-item:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 28px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-bottom: 1px solid transparent;
+}
+
+.faq-question:hover {
+    background-color: #f8f9fa;
+}
+
+.faq-item.active .faq-question {
+    border-bottom-color: #e9ecef;
+}
+
+.faq-question-text {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+    flex: 1;
+    margin-right: 20px;
+}
+
+.faq-toggle {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #9945FF;
+    transition: transform 0.3s ease, color 0.3s ease;
+    min-width: 24px;
+    text-align: center;
+}
+
+.faq-item.active .faq-toggle {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 500px;
+}
+
+.faq-answer-content {
+    padding: 0 28px 28px 28px;
+}
+
+.faq-answer-content p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #666;
+    margin: 0;
+}
+
+.faq-link {
+    color: #9945FF;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.faq-link:hover {
+    color: #7c3aed;
+}
+
+/* FAQ Section Mobile Styles */
+@media (max-width: 1024px) {
+    .faq-section {
+        padding: 80px 0;
+        margin-top: 60px;
+    }
+
+    .faq-container {
+        padding: 30px 25px;
+        margin: 0 auto;
+        background-color: #fff;
+    }
+
+
+    .faq-header {
+        margin-bottom: 40px;
+    }
+
+    .faq-title {
+        font-size: 2rem;
+        padding: 0 10px;
+    }
+
+    .faq-list {
+        gap: 12px;
+    }
+
+    .faq-question {
+        padding: 20px;
+    }
+
+    .faq-question-text {
+        font-size: 1rem;
+        margin-right: 15px;
+    }
+
+    .faq-toggle {
+        font-size: 1.3rem;
+    }
+
+    .faq-answer-content {
+        padding: 0 20px 20px 20px;
+    }
+
+    .faq-answer-content p {
+        font-size: 0.95rem;
+    }
+}
+
+/* Mobile Responsive Design - Single Query */
+@media screen and (max-width: 768px) {
+    /* Hero Section Mobile */
+    .refunds-hero-section {
+        padding: 80px 20px 60px 20px;
+        min-height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .refunds-hero-container {
+        margin: 0 auto;
+        padding: 0 20px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .refunds-hero-content {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center !important;
+        gap: 0 !important;
+        min-height: auto !important;
+    }
+    
+    .refunds-hero-text {
+        text-align: center !important;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 20px 0;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    
+    .refunds-hero-title {
+        font-size: 1.8rem !important;
+        text-align: center !important;
+        width: 100%;
+        line-height: 1.3;
+        margin: 0 auto 30px auto;
+        padding: 0;
+    }
+    
+    .refunds-hero-description {
+        font-size: 1rem !important;
+        text-align: center !important;
+        max-width: 100%;
+        margin: 0 auto 30px auto;
+        width: 100%;
+        padding: 0;
+    }
+    
+    .refunds-hero-cta {
+        padding: 15px 30px;
+        font-size: 1rem;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: auto;
+    }
+    
+    .refunds-hero-visual {
+        display: none !important;
+    }
+    
+    .refunds-hero-visual img {
+        display: none !important;
+    }
+    
+    /* Crypto Promotion Mobile Fixes */
+    .crypto-promotion-section {
+        padding: 40px 0;
+    }
+    
+    .crypto-promotion-container {
+        padding: 0 15px;
+    }
+    
+    .crypto-promotion-card {
+        padding: 30px 20px;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .crypto-promotion-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: center;
+    }
+    
+    .crypto-promotion-text {
+        text-align: center;
+        width: 100%;
+    }
+    
+    .promotion-header {
+        font-size: 0.8rem;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    .promotion-title {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .promotion-features {
+        text-align: left;
+        margin-bottom: 25px;
+    }
+    
+    .feature-item {
+        font-size: 0.85rem;
+        margin-bottom: 10px;
+        text-align: left;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    
+    .promotion-actions {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    
+    .promotion-cta {
+        padding: 15px 30px;
+        font-size: 0.9rem;
+        width: 100%;
+        max-width: 250px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .promotion-link {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+    
+    .crypto-promotion-visual {
+        height: 220px;
+        order: 1;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .crypto-promotion-visual img {
+        width: 85%;
+        max-width: 250px;
+        height: auto;
+        border-radius: 10px;
+    }
+    
+    /* Hide contact form image on mobile */
+    .contact-form-image {
+        display: none !important;
+    }
+    
+    /* Reduce contact form top padding */
+    .contact-form-wrapper {
+        padding-top: 20px !important;
+    }
+    
+    /* Reduce spacing between text and form */
+    .contact-form-description {
+        margin-bottom: 0px !important;
+    }
+    
+    .contact-form-text {
+        margin-bottom: 0px !important;
+    }
+    
+    /* Reduce margin between contact form and FAQ section */
+    .faq-section {
+        margin-top: 0px !important;
+        padding-top: 0px;
+    }
+    
+    /* Fix contact form image negative margin pushing footer up */
+    .contact-form-image {
+        margin-bottom: 0px !important;
+    }
+
+    
+}
+
+[data-scroll-container]::after {
+    content: "";
+    display: block;
+    height: 0px; /* adjust (5vh–20vh) depending on how much footer gets cut */
+  }

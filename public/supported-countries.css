@@ -1,0 +1,374 @@
+/* Supported Countries Hero Section */
+.countries-hero-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 80px 0 100px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.country-flag {
+    font-family: 'Noto Color Emoji', sans-serif;
+    font-size: 24px; /* or whatever size */
+  }
+  
+  
+
+.countries-hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 40px;
+    font-size: 0.9rem;
+}
+
+.breadcrumb-link {
+    color: #666;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.breadcrumb-link:hover {
+    color: #9945FF;
+}
+
+.breadcrumb-separator {
+    color: #999;
+    font-weight: 500;
+}
+
+.breadcrumb-current {
+    color: #333;
+    font-weight: 500;
+}
+
+.countries-hero-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.countries-hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #1D1616;
+    margin-bottom: 20px;
+    line-height: 1.1;
+}
+
+.countries-hero-description {
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .countries-hero-title {
+        font-size: 3rem;
+    }
+    
+    .countries-hero-description {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .countries-hero-section {
+        padding: 60px 0 80px 0;
+    }
+    
+    .countries-hero-container {
+        padding: 0 15px;
+    }
+    
+    .breadcrumb {
+        margin-bottom: 30px;
+        font-size: 0.85rem;
+    }
+    
+    .countries-hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .countries-hero-description {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .countries-hero-section {
+        padding: 50px 0 70px 0;
+    }
+    
+    .countries-hero-title {
+        font-size: 2rem;
+    }
+    
+    .countries-hero-description {
+        font-size: 0.95rem;
+    }
+    
+    .breadcrumb {
+        font-size: 0.8rem;
+        margin-bottom: 25px;
+    }
+}
+
+/* Supported Countries List Section */
+.countries-list-section {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+    position: relative;
+}
+
+.countries-list-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.countries-list-card {
+    background: white;
+    border-radius: 20px;
+    padding: 50px 40px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e9ecef;
+    position: relative;
+    overflow: hidden;
+}
+
+.filter-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #1D1616;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.region-filters {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 12px 24px;
+    border: 2px solid #e9ecef;
+    background: white;
+    color: #666;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.filter-btn:hover {
+    border-color: #9945FF;
+    color: #9945FF;
+    background: #f8f9fa;
+}
+
+.filter-btn.active {
+    background: #9945FF;
+    border-color: #9945FF;
+    color: white;
+}
+
+.countries-content {
+    position: relative;
+}
+
+.region-section {
+    display: block;
+    margin-bottom: 40px;
+}
+
+.region-section.active {
+    display: block;
+}
+
+.region-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1D1616;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e9ecef;
+}
+
+.countries-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.country-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 15px;
+    border: 1px solid #e9ecef;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.country-item:hover {
+    background: white;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+.country-flag {
+    font-size: 2rem;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+}
+
+.country-info {
+    flex: 1;
+}
+
+.country-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1D1616;
+    margin-bottom: 5px;
+    line-height: 1.3;
+}
+
+.country-type {
+    font-size: 0.9rem;
+    color: #666;
+    font-weight: 500;
+}
+
+/* Responsive Design for Countries List */
+@media (max-width: 1024px) {
+    .countries-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 15px;
+    }
+    
+    .country-item {
+        padding: 15px;
+    }
+    
+    .country-flag {
+        font-size: 1.8rem;
+        width: 45px;
+        height: 45px;
+    }
+}
+
+@media (max-width: 768px) {
+    .countries-list-section {
+        padding: 60px 0;
+    }
+    
+    .countries-list-card {
+        padding: 40px 20px;
+    }
+    
+    .filter-title {
+        font-size: 1.6rem;
+        margin-bottom: 25px;
+    }
+    
+    .region-filters {
+        gap: 10px;
+        margin-bottom: 40px;
+    }
+    
+    .filter-btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+    
+    .countries-grid {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 12px;
+    }
+    
+    .country-item {
+        padding: 12px;
+        gap: 12px;
+    }
+    
+    .country-flag {
+        font-size: 1.6rem;
+        width: 40px;
+        height: 40px;
+    }
+    
+    .country-name {
+        font-size: 1rem;
+    }
+    
+    .country-type {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .countries-list-card {
+        padding: 30px 15px;
+    }
+    
+    .filter-title {
+        font-size: 1.4rem;
+    }
+    
+    .region-filters {
+        gap: 8px;
+        margin-bottom: 30px;
+    }
+    
+    .filter-btn {
+        padding: 8px 16px;
+        font-size: 0.85rem;
+    }
+    
+    .countries-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    
+    .country-item {
+        padding: 15px;
+        gap: 15px;
+    }
+    
+    .country-flag {
+        font-size: 1.5rem;
+        width: 45px;
+        height: 45px;
+    }
+}
+
+[data-scroll-container]::after {
+    content: "";
+    display: block;
+    height: 0px; /* adjust (5vh–20vh) depending on how much footer gets cut */
+  }

@@ -1,0 +1,146 @@
+<html>
+  <head>
+    <title>The Best Solana Payment Gateway</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="Stylesheet" />
+    <link href="docs.css" rel="Stylesheet" />
+    <!-- Locomotive Scroll CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.css"
+    />
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  </head>
+
+  <body>
+    <!-- Docs Navbar -->
+    <nav class="docs-navbar">
+      <div class="docs-nav-container">
+        <!-- Logo -->
+        <div class="docs-logo">
+          <span class="logo-text">LUMEN</span>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="docs-nav-links">
+          <button class="docs-nav-btn active">
+            <span class="docs-nav-icon">< ></span>
+            API Reference
+          </button>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="docs-search-container">
+          <div class="docs-search-bar" id="docsSearchBar">
+            <span class="docs-search-icon">🔍</span>
+            <span class="docs-search-placeholder">Search</span>
+            <span class="docs-search-shortcut">CTRL-K</span>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content Container -->
+    <div class="docs-container">
+      <!-- Sidebar -->
+      <aside class="docs-sidebar">
+        <div class="docs-sidebar-content">
+          <!-- Jump To Section -->
+          <div class="docs-jump-to">
+            <input type="text" placeholder="JUMP TO" class="docs-jump-input" />
+            <span class="docs-jump-shortcut">CTRL-/</span>
+          </div>
+
+          <!-- Navigation Menu -->
+          <nav class="docs-nav-menu">
+            <div class="docs-nav-section">
+              <h3 class="docs-nav-title">INTRODUCTION</h3>
+              <ul class="docs-nav-list">
+                <li>
+                  <a href="#" class="docs-nav-link active">LUMEN's History</a>
+                </li>
+                <li><a href="#" class="docs-nav-link">Introduction</a></li>
+              </ul>
+            </div>
+
+            <div class="docs-nav-section">
+              <h3 class="docs-nav-title">DOCUMENTATION</h3>
+              <ul class="docs-nav-list">
+                <li>
+                  <a href="#" class="docs-nav-link">Trait Descriptions</a>
+                </li>
+                <li><a href="#" class="docs-nav-link">Roadmap</a></li>
+                <li><a href="#" class="docs-nav-link">Infographics</a></li>
+                <li><a href="#" class="docs-nav-link">White Paper</a></li>
+              </ul>
+            </div>
+
+            <div class="docs-nav-section">
+              <h3 class="docs-nav-title">CHANGELOG</h3>
+              <ul class="docs-nav-list">
+                <li><a href="#" class="docs-nav-link">Changelog</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </aside>
+
+      <!-- Main Content Area -->
+      <main class="docs-main">
+        <div class="docs-content">
+          <!-- Content will go here -->
+          <h1>Welcome to LUMEN Documentation</h1>
+          <p>Select a topic from the sidebar to get started.</p>
+        </div>
+      </main>
+    </div>
+
+    <!-- Search Overlay -->
+    <div class="docs-search-overlay" id="docsSearchOverlay">
+      <div class="docs-search-modal">
+        <div class="docs-search-input-container">
+          <input
+            type="text"
+            class="docs-search-input"
+            placeholder="Start typing to search..."
+            id="docsSearchInput"
+          />
+          <span class="docs-search-modal-icon">🔍</span>
+        </div>
+
+        <div class="docs-search-nav">
+          <button class="docs-search-tab active">
+            <span class="docs-search-tab-icon">🔍</span>
+            All
+          </button>
+          <button class="docs-search-tab">
+            <span class="docs-search-tab-icon">< ></span>
+            API Reference
+          </button>
+          <button class="docs-search-tab">
+            <span class="docs-search-tab-icon">📄</span>
+            Pages
+          </button>
+        </div>
+
+        <div class="docs-search-content">
+          <div class="docs-search-prompt">
+            <span class="docs-search-prompt-icon">🔍</span>
+            <p>Start typing to search...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="docs.js"></script>
+  </body>
+</html>

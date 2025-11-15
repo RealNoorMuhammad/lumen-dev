@@ -1,0 +1,577 @@
+<html>
+  <head>
+    <title>The Best Solana Payment Gateway</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="Stylesheet" />
+    <link href="acceptpayments.css" rel="Stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.css"
+    />
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  </head>
+
+  <body>
+    <div class="smooth-scroll" data-scroll-container>
+      <!-- Navbar -->
+      <nav class="navbar">
+        <div class="nav-container">
+          <!-- Logo -->
+          <div class="nav-logo">
+            <img src="./icon1.png" alt="SolPay Logo" class="logo-img" />
+            <span class="logo-text">LUMEN</span>
+          </div>
+
+          <!-- Navigation Links -->
+          <div class="nav-menu" id="nav-menu">
+            <div class="nav-item">
+              <a href="./index.html" class="nav-link">Home</a>
+            </div>
+            <div class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle"
+                >Business<span class="dropdown-arrow">▼</span></a
+              >
+              <div class="dropdown-content">
+                <a href="./acceptpayments.html" class="dropdown-link"
+                  >Accept Payments</a
+                >
+                <a href="./manageandexchange.html" class="dropdown-link"
+                  >Manage & Exchange</a
+                >
+                <a href="./Termsandpolicies.html" class="dropdown-link"
+                  >Terms & Policies</a
+                >
+              </div>
+            </div>
+
+            <div class="nav-item">
+              <a href="./pricing.html" class="nav-link">Pricing</a>
+            </div>
+            <div class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle"
+                >Developers <span class="dropdown-arrow">▼</span></a
+              >
+              <div class="dropdown-content">
+                <a href="./docs.html" class="dropdown-link">Documentation</a>
+                <a
+                  href="https://github.com/lumenonsol-sys"
+                  class="dropdown-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Github Repository</a
+                >
+                <a href="./status.html" class="dropdown-link">Status</a>
+              </div>
+            </div>
+            <div class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle"
+                >Resources <span class="dropdown-arrow">▼</span></a
+              >
+              <div class="dropdown-content">
+                <a href="./about.html" class="dropdown-link">LUMEN In Detail</a>
+                <a href="./supported-countries.html" class="dropdown-link"
+                  >Supported Countries</a
+                >
+                <a href="./contact.html" class="dropdown-link"
+                  >Contact Support</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Mobile Menu Toggle -->
+          <div class="nav-toggle" id="nav-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Hero Section -->
+      <section class="hero-section" data-scroll-section>
+        <div class="hero-container">
+          <div class="hero-content">
+            <div class="hero-text">
+              <nav class="breadcrumb">
+                <a href="./index.html" class="breadcrumb-link">Home</a>
+                <span class="breadcrumb-separator">></span>
+                <span class="breadcrumb-current">Accept Payments</span>
+              </nav>
+
+              <h1 class="hero-title">
+                Solana Payment Solutions<br />
+                For All
+              </h1>
+
+              <p class="hero-description">
+                SolPay's seamless crypto payment solution ensures you are
+                equipped with modern payment tools and stay ahead of your
+                competition. Get ready to expand your market with borderless,
+                inclusive payments.
+              </p>
+
+              <button class="hero-cta">
+                Start now <span class="cta-arrow">></span>
+              </button>
+            </div>
+
+            <div class="hero-visual">
+              <img src="./accept.png" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Industry Solutions Section -->
+      <section class="industry-section" data-scroll-section>
+        <div class="industry-container">
+          <div class="industry-header">
+            <h2 class="industry-title">
+              Tailored Crypto Payment Gateway For Your Industry
+            </h2>
+            <p class="industry-subtitle">
+              Choose your sector and learn how our crypto payment solutions can
+              specifically help your business grow.
+            </p>
+          </div>
+
+          <div class="industry-grid">
+            <!-- Row 1 -->
+            <div class="industry-card">
+              <div class="card-icon vpn">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M12 1L3 5V11C3 16.55 6.84 21.74 12 23C17.16 21.74 21 16.55 21 11V5L12 1M10 17L6 13L7.41 11.59L10 14.17L16.59 7.58L18 9L10 17Z"
+                  />
+                </svg>
+              </div>
+              <h3 class="card-title">VPNs</h3>
+              <p class="card-description">
+                Secure and anonymous payments to protect privacy.
+              </p>
+              <a href="#" class="card-link">Visit page</a>
+            </div>
+
+            <div class="industry-card">
+              <div class="card-icon hosting">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M4 1C2.89 1 2 1.89 2 3V7C2 8.11 2.89 9 4 9H1V11H13V9H10C11.11 9 12 8.11 12 7V3C12 1.89 11.11 1 10 1H4M4 3H10V7H4V3M3 13V18L3 19H10V18H5V13H3M14 13V18H11V19H18V18H17V13H14M15 15H16V16H15V15M6 15H7V16H6V15M6 4H7V5H6V4M6 6H7V7H6V6M6 8H7V9H6V8M8 4H9V5H8V4M8 6H9V7H8V6M8 8H9V9H8V8Z"
+                  />
+                </svg>
+              </div>
+              <h3 class="card-title">Hosting Services</h3>
+              <p class="card-description">
+                Fast, reliable transaction solutions for uptime-critical
+                environments.
+              </p>
+              <a href="#" class="card-link">Visit page</a>
+            </div>
+
+            <div class="industry-card">
+              <div class="card-icon travel">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22S19 14.25 19 9C19 5.13 15.87 2 12 2M12 11.5C10.62 11.5 9.5 10.38 9.5 9S10.62 6.5 12 6.5S14.5 7.62 14.5 9S13.38 11.5 12 11.5Z"
+                  />
+                </svg>
+              </div>
+              <h3 class="card-title">Travel Websites</h3>
+              <p class="card-description">
+                Borderless payments for global bookings and accommodations.
+              </p>
+              <a href="#" class="card-link">Visit page</a>
+            </div>
+
+            <div class="industry-card">
+              <div class="card-icon gaming">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M7,6H17A6,6 0 0,1 23,12A6,6 0 0,1 17,18C15.22,18 13.63,17.23 12.53,16H11.47C10.37,17.23 8.78,18 7,18A6,6 0 0,1 1,12A6,6 0 0,1 7,6M7,8A4,4 0 0,0 3,12A4,4 0 0,0 7,16A4,4 0 0,0 11,12A4,4 0 0,0 7,8M17,8A4,4 0 0,0 13,12A4,4 0 0,0 17,16A4,4 0 0,0 21,12A4,4 0 0,0 17,8M5,9V11H3V13H5V15H7V13H9V11H7V9H5M15,10.5V11.5H16.5V13H15V14H16V15H18V14H19V13H18V11.5H19V10.5H18V9H16V10.5H15Z"
+                  />
+                </svg>
+              </div>
+              <h3 class="card-title">Gaming Platforms</h3>
+              <p class="card-description">
+                Enhance in-game purchases with cryptocurrency.
+              </p>
+              <a href="#" class="card-link">Visit page</a>
+            </div>
+
+            <!-- Row 2 -->
+            <div class="industry-card">
+              <div class="card-icon proxy">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M12,6A6,6 0 0,0 6,12A6,6 0 0,0 12,18A6,6 0 0,0 18,12A6,6 0 0,0 12,6M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8Z"
+                  />
+                </svg>
+              </div>
+              <h3 class="card-title">Proxies</h3>
+              <p class="card-description">
+                Private and secure payment methods for users worldwide.
+              </p>
+              <a href="#" class="card-link">Visit page</a>
+            </div>
+
+            <div class="industry-card">
+              <div class="card-icon rdp">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M3,3H21A2,2 0 0,1 23,5V19A2,2 0 0,1 21,21H3A2,2 0 0,1 1,19V5A2,2 0 0,1 3,3M3,5V19H21V5H3M5,7H19V9H5V7M5,11H19V13H5V11M5,15H19V17H5V15Z"
+                  />
+                </svg>
+              </div>
+              <h3 class="card-title">Remote Desktop Services (RDP)</h3>
+              <p class="card-description">
+                Streamlined payments for remote access solutions.
+              </p>
+              <a href="#" class="card-link">Visit page</a>
+            </div>
+
+            <div class="industry-card">
+              <div class="card-icon ecommerce">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M7,4V2A1,1 0 0,1 8,1H16A1,1 0 0,1 17,2V4H20A1,1 0 0,1 21,5V9A1,1 0 0,1 20,10H19V19A2,2 0 0,1 17,21H7A2,2 0 0,1 5,19V10H4A1,1 0 0,1 3,9V5A1,1 0 0,1 4,4H7M9,3V4H15V3H9M7,6V8H9V6H7M11,6V8H13V6H11M15,6V8H17V6H15M7,10V19H17V10H7M9,12H11V14H9V12M13,12H15V14H13V12Z"
+                  />
+                </svg>
+              </div>
+              <h3 class="card-title">E-commerce / Marketplaces</h3>
+              <p class="card-description">
+                Simple, secure transactions to boost your online sales.
+              </p>
+              <a href="#" class="card-link">Visit page</a>
+            </div>
+
+            <div class="industry-card">
+              <div class="card-icon small-business">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M12,2A3,3 0 0,1 15,5V7A3,3 0 0,1 12,10A3,3 0 0,1 9,7V5A3,3 0 0,1 12,2M19,10.5V12A1,1 0 0,1 18,13H17V19A2,2 0 0,1 15,21H9A2,2 0 0,1 7,19V13H6A1,1 0 0,1 5,12V10.5A1,1 0 0,1 6,9.5H7V7A5,5 0 0,1 12,2A5,5 0 0,1 17,7V9.5H18A1,1 0 0,1 19,10.5M9,13V19H15V13H9Z"
+                  />
+                </svg>
+              </div>
+              <h3 class="card-title">Small Businesses</h3>
+              <p class="card-description">
+                Easy integration and low fees to help your business thrive.
+              </p>
+              <a href="#" class="card-link">Visit page</a>
+            </div>
+
+            <!-- Row 3 -->
+            <div class="industry-card">
+              <div class="card-icon retail">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M7,4V2A1,1 0 0,1 8,1H16A1,1 0 0,1 17,2V4H20A1,1 0 0,1 21,5V9A1,1 0 0,1 20,10H19V19A2,2 0 0,1 17,21H7A2,2 0 0,1 5,19V10H4A1,1 0 0,1 3,9V5A1,1 0 0,1 4,4H7M9,3V4H15V3H9M7,6V8H9V6H7M11,6V8H13V6H11M15,6V8H17V6H15M7,10V19H17V10H7M9,12H11V14H9V12M13,12H15V14H13V12Z"
+                  />
+                </svg>
+              </div>
+              <h3 class="card-title">Retail</h3>
+              <p class="card-description">
+                Attract a tech-savvy audience with cryptocurrency options.
+              </p>
+              <a href="#" class="card-link">Visit page</a>
+            </div>
+
+            <div class="industry-card">
+              <div class="card-icon online-stores">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M12,6A6,6 0 0,0 6,12A6,6 0 0,0 12,18A6,6 0 0,0 18,12A6,6 0 0,0 12,6M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8Z"
+                  />
+                </svg>
+              </div>
+              <h3 class="card-title">Online Stores</h3>
+              <p class="card-description">
+                Expand your customer base by accepting global crypto payments.
+              </p>
+              <a href="#" class="card-link">Visit page</a>
+            </div>
+
+            <div class="industry-card">
+              <div class="card-icon non-profit">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"
+                  />
+                </svg>
+              </div>
+              <h3 class="card-title">Non-Profit Organizations</h3>
+              <p class="card-description">
+                Maximize donations with efficient, low-cost payment solutions.
+              </p>
+              <a href="#" class="card-link">Visit page</a>
+            </div>
+
+            <div class="industry-card">
+              <div class="card-icon psp">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M7,4V2A1,1 0 0,1 8,1H16A1,1 0 0,1 17,2V4H20A1,1 0 0,1 21,5V9A1,1 0 0,1 20,10H19V19A2,2 0 0,1 17,21H7A2,2 0 0,1 5,19V10H4A1,1 0 0,1 3,9V5A1,1 0 0,1 4,4H7M9,3V4H15V3H9M7,6V8H9V6H7M11,6V8H13V6H11M15,6V8H17V6H15M7,10V19H17V10H7M9,12H11V14H9V12M13,12H15V14H13V12Z"
+                  />
+                </svg>
+              </div>
+              <h3 class="card-title">Payment Service Providers (PSPs)</h3>
+              <p class="card-description">
+                Broaden your offerings with diverse crypto payment options.
+              </p>
+              <a href="#" class="card-link">Visit page</a>
+            </div>
+
+            <!-- Row 4 - Single Card -->
+            <div class="industry-card centered">
+              <div class="card-icon saas">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M12,6A6,6 0 0,0 6,12A6,6 0 0,0 12,18A6,6 0 0,0 18,12A6,6 0 0,0 12,6M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8Z"
+                  />
+                </svg>
+              </div>
+              <h3 class="card-title">Software as a Service (SaaS)</h3>
+              <p class="card-description">
+                Modern payment solutions for subscription-based services.
+              </p>
+              <a href="#" class="card-link">Visit page</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Hero Section -->
+
+      <!-- Footer -->
+      <footer class="footer" data-scroll-section>
+        <div class="footer-container">
+          <div class="footer-content">
+            <div class="footer-brand">
+              <div class="footer-logo">
+                <img
+                  src="./icon1.png"
+                  alt="SolPay Logo"
+                  class="footer-logo-img"
+                />
+              </div>
+              <div class="footer-info">
+                <p class="footer-copyright">2025 © LUMEN</p>
+                <p class="footer-connect">Let's connect:</p>
+                <div class="footer-social">
+                  <a href="#" class="social-link facebook">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                      />
+                    </svg>
+                  </a>
+                  <a href="#" class="social-link twitter">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
+                      />
+                    </svg>
+                  </a>
+                  <a href="#" class="social-link linkedin">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                      />
+                    </svg>
+                  </a>
+                  <a href="#" class="social-link instagram">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="footer-links">
+              <div class="footer-column">
+                <h3 class="footer-column-title">General</h3>
+                <ul class="footer-link-list">
+                  <li><a href="./index.html" class="footer-link">Home</a></li>
+                  <li>
+                    <a href="./pricing.html" class="footer-link">Pricing</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="footer-column">
+                <h3 class="footer-column-title">Business</h3>
+                <ul class="footer-link-list">
+                  <li>
+                    <a href="./acceptpayments.html" class="footer-link"
+                      >Accept Payments</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./manageandexchange.html" class="footer-link"
+                      >Manage & Exchange</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./Termsandpolicies.html" class="footer-link"
+                      >Terms & Policies</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <div class="footer-column">
+                <h3 class="footer-column-title">Developers</h3>
+                <ul class="footer-link-list">
+                  <li><a href="#" class="footer-link">Documentation</a></li>
+                  <li>
+                    <a
+                      href="https://github.com/lumenonsol-sys"
+                      class="footer-link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Github Repository</a
+                    >
+                  </li>
+                  <li><a href="#" class="footer-link">Status</a></li>
+                </ul>
+              </div>
+
+              <div class="footer-column">
+                <h3 class="footer-column-title">Resources</h3>
+                <ul class="footer-link-list">
+                  <li>
+                    <a href="./about.html" class="footer-link"
+                      >SolPay in Detail</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./supported-countries.html" class="footer-link"
+                      >Supported Countries</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./contact.html" class="footer-link"
+                      >Contact Support</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./token.html" class="footer-link">SOLPAY Token</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Footer Bottom -->
+          <div class="footer-bottom">
+            <div class="footer-bottom-content">
+              <p class="footer-copyright-bottom">
+                © 2025 LUMEN. All rights reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- End smooth-scroll container -->
+
+    <script src="script.js"></script>
+  </body>
+</html>

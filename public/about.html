@@ -1,0 +1,744 @@
+<html>
+  <head>
+    <title>The Best Solana Payment Gateway</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="Stylesheet" />
+    <link href="about.css" rel="Stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.css"
+    />
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <!-- Logo -->
+        <div class="nav-logo">
+          <img src="./icon1.png" alt="SolPay Logo" class="logo-img" />
+          <span class="logo-text">LUMEN</span>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="nav-menu" id="nav-menu">
+          <div class="nav-item">
+            <a href="./index.html" class="nav-link">Home</a>
+          </div>
+          <div class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle"
+              >Business<span class="dropdown-arrow">▼</span></a
+            >
+            <div class="dropdown-content">
+              <a href="./acceptpayments.html" class="dropdown-link"
+                >Accept Payments</a
+              >
+              <a href="./manageandexchange.html" class="dropdown-link"
+                >Manage & Exchange</a
+              >
+              <a href="./Termsandpolicies.html" class="dropdown-link"
+                >Terms & Policies</a
+              >
+            </div>
+          </div>
+
+          <div class="nav-item">
+            <a href="./pricing.html" class="nav-link">Pricing</a>
+          </div>
+          <div class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle"
+              >Developers <span class="dropdown-arrow">▼</span></a
+            >
+            <div class="dropdown-content">
+              <a href="./docs.html" class="dropdown-link">Documentation</a>
+              <a
+                href="https://github.com/lumenonsol-sys"
+                class="dropdown-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Github Repository</a
+              >
+              <a href="./status.html" class="dropdown-link">Status</a>
+            </div>
+          </div>
+          <div class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle"
+              >Resources <span class="dropdown-arrow">▼</span></a
+            >
+            <div class="dropdown-content">
+              <a href="./about.html" class="dropdown-link">LUMEN In Detail</a>
+              <a href="./supported-countries.html" class="dropdown-link"
+                >Supported Countries</a
+              >
+              <a href="./contact.html" class="dropdown-link">Contact Support</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile Menu Toggle -->
+        <div class="nav-toggle" id="nav-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- About Hero Section -->
+    <section class="about-hero">
+      <div class="about-hero-container">
+        <div class="about-hero-content">
+          <nav class="breadcrumbs">
+            <a href="./index.html" class="breadcrumb-link">Home</a>
+            <span class="breadcrumb-separator">></span>
+            <span class="breadcrumb-current">About Us</span>
+          </nav>
+
+          <h1 class="about-hero-title">About LUMEN</h1>
+
+          <p class="about-hero-description">
+            LUMEN is a cryptocurrency service provider founded in 2024 and based
+            in the United States. LUMEN offers flexible, automated
+            cryptocurrency payment processing and accounting services for
+            businesses of all sizes looking to modernize their payment options,
+            attract more customers, and increase sales.
+          </p>
+        </div>
+
+        <div class="about-hero-visual">
+          <img
+            src="./about-hero.png"
+            alt="SolPay cryptocurrency payment processing"
+            class="about-hero-image"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Milestones & Achievements Section -->
+    <section class="milestones-section">
+      <div class="milestones-container">
+        <div class="milestones-header">
+          <div class="milestones-content">
+            <div class="milestones-overline">WE ARE LUMEN</div>
+            <h2 class="milestones-title">
+              Our Team's Milestones & Achievements
+            </h2>
+            <p class="milestones-description">
+              Our services go beyond just crypto payment processing. We always
+              strive to create innovative solutions based on our customers'
+              needs and preferences.
+            </p>
+            <p class="milestones-description">
+              This allows us to meet customer expectations and ensure a seamless
+              experience for both businesses and their clients. Here's what we
+              have achieved over the past 10 years:
+            </p>
+          </div>
+          <div class="milestones-hero-image">
+            <img
+              src="../assets/Pics/About/achiev-img.png"
+              alt="SolPay team achievements"
+              class="milestones-image"
+            />
+          </div>
+        </div>
+
+        <div class="timeline-container">
+          <div class="timeline-grid">
+            <div class="timeline-year">
+              <div class="year-header">
+                <span class="trophy-icon">🏆</span>
+                <h3 class="year-title">2025</h3>
+              </div>
+              <ul class="year-achievements">
+                <li>Base network integration</li>
+              </ul>
+            </div>
+
+            <div class="timeline-year">
+              <div class="year-header">
+                <span class="trophy-icon">🏆</span>
+                <h3 class="year-title">2024</h3>
+              </div>
+              <ul class="year-achievements">
+                <li>Updated account management system</li>
+                <li>Solana network integration</li>
+                <li>Store directory update</li>
+                <li>LUMEN joins the Circle Alliance Program</li>
+                <li>Launch of the crypto payouts feature</li>
+                <li>Updated invoicing feature</li>
+              </ul>
+            </div>
+
+            <div class="timeline-year">
+              <div class="year-header">
+                <span class="trophy-icon">🏆</span>
+                <h3 class="year-title">2023</h3>
+              </div>
+              <ul class="year-achievements">
+                <li>
+                  Binance Smart Chain (BSC) and Polygon network payments
+                  launched
+                </li>
+                <li>Integration of BRC-20 tokens</li>
+                <li>Binance Pay payment method added to LUMEN services</li>
+                <li>Arbitrum network payments launched</li>
+                <li>
+                  Major updates and improvements to business account
+                  functionality
+                </li>
+              </ul>
+            </div>
+
+            <div class="timeline-year">
+              <div class="year-header">
+                <span class="trophy-icon">🏆</span>
+                <h3 class="year-title">2022</h3>
+              </div>
+              <ul class="year-achievements">
+                <li>Refund feature launched</li>
+                <li>New LUMEN payment window design</li>
+                <li>Services extended to businesses registered in the U.S.</li>
+                <li>
+                  LUMEN partners with PrestaShop; official modules released for
+                  WIX, Shopware, and other e-commerce platforms
+                </li>
+                <li>LUMEN splits into two companies</li>
+              </ul>
+            </div>
+
+            <div class="timeline-year">
+              <div class="year-header">
+                <span class="trophy-icon">🏆</span>
+                <h3 class="year-title">2021</h3>
+              </div>
+              <ul class="year-achievements">
+                <li>LUMEN users can buy crypto using Apple Pay</li>
+                <li>
+                  The number of supported cryptocurrencies increases to 70+
+                </li>
+                <li>
+                  Binance Pay added as a payment method in the gift card store
+                </li>
+                <li>
+                  Official modules launched for PrestaShop, WooCommerce, and
+                  other platforms
+                </li>
+              </ul>
+            </div>
+
+            <div class="timeline-year">
+              <div class="year-header">
+                <span class="trophy-icon">🏆</span>
+                <h3 class="year-title">2020</h3>
+              </div>
+              <ul class="year-achievements">
+                <li>
+                  New options for buying crypto with credit or debit cards
+                </li>
+                <li>New website launch</li>
+                <li>Store directory launch</li>
+                <li>Binance Chain support and Integration of BEP2 tokens</li>
+                <li>Launch of the gift card store</li>
+                <li>Crypto invoicing feature introduced</li>
+                <li>UAB "Virtualios Valiutos" rebranded to "Decentralized"</li>
+                <li>New partnership program launched</li>
+                <li>1,000,000 processed payments milestone</li>
+              </ul>
+            </div>
+
+            <div class="timeline-year">
+              <div class="year-header">
+                <span class="trophy-icon">🏆</span>
+                <h3 class="year-title">2019</h3>
+              </div>
+              <ul class="year-achievements">
+                <li>First to integrate Litecoin Lightning Network payments</li>
+                <li>New supported payment currencies: XRP, Tron & others</li>
+                <li>Introduction of account management permissions</li>
+                <li>750,000 processed payments milestone</li>
+              </ul>
+            </div>
+
+            <div class="timeline-year">
+              <div class="year-header">
+                <span class="trophy-icon">🏆</span>
+                <h3 class="year-title">2018</h3>
+              </div>
+              <ul class="year-achievements">
+                <li>Litecoin and Ethereum payments enabled</li>
+                <li>ERC-20 token integrations introduced based on demand</li>
+                <li>Bitcoin Lightning Network payments integrated</li>
+                <li>
+                  Team grows to 10 people; 50,000 registered users; 200,000
+                  processed payments
+                </li>
+              </ul>
+            </div>
+
+            <div class="timeline-year">
+              <div class="year-header">
+                <span class="trophy-icon">🏆</span>
+                <h3 class="year-title">2017</h3>
+              </div>
+              <ul class="year-achievements">
+                <li>SegWit technology support integrated</li>
+                <li>100,000 processed crypto payments</li>
+                <li>Crypto purchasing via mobile phone billing launched</li>
+              </ul>
+            </div>
+
+            <div class="timeline-year">
+              <div class="year-header">
+                <span class="trophy-icon">🏆</span>
+                <h3 class="year-title">2016</h3>
+              </div>
+              <ul class="year-achievements">
+                <li>First major milestone: 1,000 registered users</li>
+              </ul>
+            </div>
+
+            <div class="timeline-year">
+              <div class="year-header">
+                <span class="trophy-icon">🏆</span>
+                <h3 class="year-title">2015</h3>
+              </div>
+              <ul class="year-achievements">
+                <li>SolPay launches operations with a three-person team</li>
+              </ul>
+            </div>
+
+            <div class="timeline-year">
+              <div class="year-header">
+                <span class="trophy-icon">🏆</span>
+                <h3 class="year-title">2014</h3>
+              </div>
+              <ul class="year-achievements">
+                <li>
+                  SolPay registers the company under the name UAB "Virtualios
+                  Valiutos"
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Careers Section -->
+    <section class="careers-section">
+      <div class="careers-container">
+        <div class="careers-content">
+          <h2 class="careers-title">We're Always Looking For New Talents!</h2>
+          <p class="careers-description">
+            Are you passionate about the potential of blockchain technology? Do
+            you want to dive into the fast-paced world of fintech while working
+            alongside a team of highly skilled professionals? If these goals
+            align with your career aspirations, you could be the perfect fit for
+            our team. Submit your resume along with your desired job position,
+            and we will review it and get in touch to discuss career
+            opportunities that best match your qualifications.
+          </p>
+          <button class="careers-button" id="careersModalBtn">
+            Check available positions >
+          </button>
+        </div>
+        <div class="careers-visual">
+          <img
+            src="../assets/Pics/About/hiring-pic.png"
+            alt="Join our team"
+            class="careers-image"
+          />
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer" data-scroll-section>
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <img
+                src="./icon1.png"
+                alt="SolPay Logo"
+                class="footer-logo-img"
+              />
+            </div>
+            <div class="footer-info">
+              <p class="footer-copyright">2025 © LUMEN</p>
+              <p class="footer-connect">Let's connect:</p>
+              <div class="footer-social">
+                <a href="#" class="social-link facebook">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                    />
+                  </svg>
+                </a>
+                <a href="#" class="social-link twitter">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
+                    />
+                  </svg>
+                </a>
+                <a href="#" class="social-link linkedin">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                    />
+                  </svg>
+                </a>
+                <a href="#" class="social-link instagram">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <div class="footer-column">
+              <h3 class="footer-column-title">General</h3>
+              <ul class="footer-link-list">
+                <li><a href="./index.html" class="footer-link">Home</a></li>
+                <li>
+                  <a href="./pricing.html" class="footer-link">Pricing</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer-column">
+              <h3 class="footer-column-title">Business</h3>
+              <ul class="footer-link-list">
+                <li>
+                  <a href="./acceptpayments.html" class="footer-link"
+                    >Accept Payments</a
+                  >
+                </li>
+                <li>
+                  <a href="./manageandexchange.html" class="footer-link"
+                    >Manage & Exchange</a
+                  >
+                </li>
+                <li>
+                  <a href="./Termsandpolicies.html" class="footer-link"
+                    >Terms & Policies</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer-column">
+              <h3 class="footer-column-title">Developers</h3>
+              <ul class="footer-link-list">
+                <li><a href="#" class="footer-link">Documentation</a></li>
+                <li>
+                  <a
+                    href="https://github.com/lumenonsol-sys"
+                    class="footer-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Github Repository</a
+                  >
+                </li>
+                <li><a href="#" class="footer-link">Status</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-column">
+              <h3 class="footer-column-title">Resources</h3>
+              <ul class="footer-link-list">
+                <li>
+                  <a href="./about.html" class="footer-link"
+                    >SolPay in Detail</a
+                  >
+                </li>
+                <li>
+                  <a href="./supported-countries.html" class="footer-link"
+                    >Supported Countries</a
+                  >
+                </li>
+                <li>
+                  <a href="./contact.html" class="footer-link"
+                    >Contact Support</a
+                  >
+                </li>
+                <li>
+                  <a href="./token.html" class="footer-link">SOLPAY Token</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+          <div class="footer-bottom-content">
+            <p class="footer-copyright-bottom">
+              © 2025 LUMEN. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Careers Modal -->
+    <div id="careersModal" class="careers-modal">
+      <div class="careers-modal-overlay"></div>
+      <div class="careers-modal-content">
+        <div class="careers-modal-header">
+          <h2 class="careers-modal-title">Open Positions</h2>
+          <button class="careers-modal-close" id="careersModalClose">
+            &times;
+          </button>
+        </div>
+        <div class="careers-modal-body">
+          <p class="careers-modal-intro">
+            Join our team and help shape the future of cryptocurrency payments.
+            We're looking for talented individuals who are passionate about
+            blockchain technology and fintech innovation.
+          </p>
+
+          <div class="jobs-list">
+            <!-- Job 1 -->
+            <div class="job-card">
+              <div class="job-header">
+                <div class="job-title-section">
+                  <h3 class="job-title">Senior Blockchain Developer</h3>
+                  <div class="job-badges">
+                    <span class="job-badge job-type">Full-time</span>
+                    <span class="job-badge job-location">Remote</span>
+                  </div>
+                </div>
+              </div>
+              <p class="job-department">Engineering • Solana Network</p>
+              <p class="job-description">
+                We're seeking an experienced blockchain developer to work on our
+                Solana-based payment infrastructure. You'll be building scalable
+                smart contracts, integrating with DeFi protocols, and optimizing
+                transaction processing.
+              </p>
+              <div class="job-requirements">
+                <strong>Requirements:</strong>
+                <ul>
+                  <li>5+ years of blockchain development experience</li>
+                  <li>Proficiency in Rust and Solana development</li>
+                  <li>Experience with smart contract security and auditing</li>
+                  <li>Strong understanding of DeFi protocols</li>
+                </ul>
+              </div>
+              <button class="job-apply-btn">Apply Now</button>
+            </div>
+
+            <!-- Job 2 -->
+            <div class="job-card">
+              <div class="job-header">
+                <div class="job-title-section">
+                  <h3 class="job-title">Full Stack Developer</h3>
+                  <div class="job-badges">
+                    <span class="job-badge job-type">Full-time</span>
+                    <span class="job-badge job-location">Hybrid</span>
+                  </div>
+                </div>
+              </div>
+              <p class="job-department">Engineering • Payment Gateway</p>
+              <p class="job-description">
+                Join our payment gateway team to build and maintain our core
+                platform. You'll work on API integrations, payment processing
+                systems, and merchant dashboard features using modern web
+                technologies.
+              </p>
+              <div class="job-requirements">
+                <strong>Requirements:</strong>
+                <ul>
+                  <li>4+ years of full-stack development experience</li>
+                  <li>Proficiency in Node.js, React, and TypeScript</li>
+                  <li>Experience with payment processing systems</li>
+                  <li>Knowledge of RESTful APIs and microservices</li>
+                </ul>
+              </div>
+              <button class="job-apply-btn">Apply Now</button>
+            </div>
+
+            <!-- Job 3 -->
+            <div class="job-card">
+              <div class="job-header">
+                <div class="job-title-section">
+                  <h3 class="job-title">DevOps Engineer</h3>
+                  <div class="job-badges">
+                    <span class="job-badge job-type">Full-time</span>
+                    <span class="job-badge job-location">Remote</span>
+                  </div>
+                </div>
+              </div>
+              <p class="job-department">Infrastructure • Cloud Operations</p>
+              <p class="job-description">
+                Help us scale our infrastructure to handle millions of
+                transactions. You'll manage our cloud infrastructure, implement
+                CI/CD pipelines, monitor system performance, and ensure high
+                availability.
+              </p>
+              <div class="job-requirements">
+                <strong>Requirements:</strong>
+                <ul>
+                  <li>3+ years of DevOps experience</li>
+                  <li>Expertise in AWS, Docker, and Kubernetes</li>
+                  <li>
+                    Experience with monitoring tools (Prometheus, Grafana)
+                  </li>
+                  <li>Strong scripting skills (Bash, Python)</li>
+                </ul>
+              </div>
+              <button class="job-apply-btn">Apply Now</button>
+            </div>
+
+            <!-- Job 4 -->
+            <div class="job-card">
+              <div class="job-header">
+                <div class="job-title-section">
+                  <h3 class="job-title">Product Manager</h3>
+                  <div class="job-badges">
+                    <span class="job-badge job-type">Full-time</span>
+                    <span class="job-badge job-location">Hybrid</span>
+                  </div>
+                </div>
+              </div>
+              <p class="job-department">Product • Strategy</p>
+              <p class="job-description">
+                Lead product strategy and development for our payment solutions.
+                You'll work closely with engineering, design, and business teams
+                to define product roadmaps and deliver features that drive
+                growth.
+              </p>
+              <div class="job-requirements">
+                <strong>Requirements:</strong>
+                <ul>
+                  <li>5+ years of product management experience</li>
+                  <li>Experience in fintech or payment processing</li>
+                  <li>Strong analytical and problem-solving skills</li>
+                  <li>Excellent communication and leadership abilities</li>
+                </ul>
+              </div>
+              <button class="job-apply-btn">Apply Now</button>
+            </div>
+
+            <!-- Job 5 -->
+            <div class="job-card">
+              <div class="job-header">
+                <div class="job-title-section">
+                  <h3 class="job-title">Security Engineer</h3>
+                  <div class="job-badges">
+                    <span class="job-badge job-type">Full-time</span>
+                    <span class="job-badge job-location">Remote</span>
+                  </div>
+                </div>
+              </div>
+              <p class="job-department">Security • Risk Management</p>
+              <p class="job-description">
+                Protect our platform and users from security threats. You'll
+                conduct security audits, implement security best practices,
+                respond to incidents, and ensure compliance with industry
+                standards.
+              </p>
+              <div class="job-requirements">
+                <strong>Requirements:</strong>
+                <ul>
+                  <li>4+ years of cybersecurity experience</li>
+                  <li>Experience with blockchain security</li>
+                  <li>
+                    Knowledge of penetration testing and vulnerability
+                    assessment
+                  </li>
+                  <li>
+                    Familiarity with compliance standards (PCI-DSS, SOC 2)
+                  </li>
+                </ul>
+              </div>
+              <button class="job-apply-btn">Apply Now</button>
+            </div>
+
+            <!-- Job 6 -->
+            <div class="job-card">
+              <div class="job-header">
+                <div class="job-title-section">
+                  <h3 class="job-title">Business Development Manager</h3>
+                  <div class="job-badges">
+                    <span class="job-badge job-type">Full-time</span>
+                    <span class="job-badge job-location">Hybrid</span>
+                  </div>
+                </div>
+              </div>
+              <p class="job-department">Sales • Partnerships</p>
+              <p class="job-description">
+                Drive business growth by acquiring new merchant partners and
+                expanding our market presence. You'll build relationships with
+                e-commerce platforms, negotiate partnerships, and develop
+                go-to-market strategies.
+              </p>
+              <div class="job-requirements">
+                <strong>Requirements:</strong>
+                <ul>
+                  <li>3+ years of B2B sales experience</li>
+                  <li>Experience in fintech or SaaS</li>
+                  <li>Strong negotiation and relationship-building skills</li>
+                  <li>
+                    Understanding of cryptocurrency and blockchain technology
+                  </li>
+                </ul>
+              </div>
+              <button class="job-apply-btn">Apply Now</button>
+            </div>
+          </div>
+
+          <div class="careers-modal-footer">
+            <p class="careers-modal-note">
+              Don't see a position that matches your skills? We're always
+              interested in hearing from talented individuals.
+              <a href="./contact.html" class="careers-contact-link"
+                >Contact us</a
+              >
+              with your resume and we'll keep you in mind for future
+              opportunities.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

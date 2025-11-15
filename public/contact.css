@@ -1,0 +1,185 @@
+/* Contact Sales Section */
+.contact-sales-section {
+    background-color: #f4f6f8;
+    padding: 80px 0;
+}
+
+.contact-sales-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* White Card that doesn't stretch full width */
+.contact-sales-card {
+    background: #ffffff;
+    border-radius: 20px;
+    border: 1px solid #e9ecef;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+    padding: 50px;
+}
+
+/* Grid layout */
+.contact-sales-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+/* Left column */
+.contact-eyebrow {
+    color: #7b8a97;
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.contact-title {
+    font-size: 2.6rem;
+    font-weight: 800;
+    color: #1D1616;
+    margin: 0 0 14px 0;
+}
+
+.contact-lead {
+    color: #485563;
+    margin-bottom: 16px;
+}
+
+.contact-benefits {
+    margin: 0 0 24px 0;
+    padding-left: 18px;
+    color: #5b6876;
+    line-height: 1.7;
+}
+
+.contact-image {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-image img {
+    width: 100%;
+    max-width: 420px;
+    border-radius: 18px;
+}
+
+/* Right column form */
+.contact-form-wrapper {
+    background: #ffffff;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+}
+
+.form-row.two-cols {
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #1D1616;
+    margin-bottom: 8px;
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+    padding: 14px 16px;
+    border: 2px solid #e9ecef;
+    border-radius: 10px;
+    font-size: 1rem;
+    background: #f8f9fa;
+    color: #1D1616;
+    transition: all 0.25s ease;
+    font-family: inherit;
+}
+
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+    outline: none;
+    border-color: #9945FF;
+    background: #ffffff;
+    box-shadow: 0 0 0 3px rgba(153,69,255,0.12);
+}
+
+.form-textarea {
+    resize: vertical;
+    min-height: 160px;
+}
+
+.contact-submit {
+    margin-top: 8px;
+    padding: 16px 26px;
+    border: none;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #ffffff;
+    background: linear-gradient(135deg, #9945FF 0%, #7B2CBF 100%);
+    box-shadow: 0 10px 28px rgba(153,69,255,0.35);
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+.contact-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 34px rgba(153,69,255,0.45);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .contact-sales-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .contact-title {
+        font-size: 2.2rem;
+    }
+
+    .form-row.two-cols {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    .contact-sales-card {
+        padding: 28px 18px;
+    }
+
+    .contact-title {
+        font-size: 1.9rem;
+    }
+
+    .contact-image img {
+        max-width: 340px;
+    }
+}
+
+[data-scroll-container]::after {
+    content: "";
+    display: block;
+    height: 0px; /* adjust (5vh–20vh) depending on how much footer gets cut */
+}

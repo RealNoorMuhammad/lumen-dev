@@ -1,0 +1,374 @@
+/* Status Page Styles */
+.status {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    min-height: 60vh;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Main Status Banner */
+.status-banner {
+    background: linear-gradient(135deg, #4CAF50, #45a049);
+    border-radius: 12px;
+    padding: 20px 30px;
+    text-align: center;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(76, 175, 80, 0.2);
+}
+
+.status-title {
+    color: white;
+    font-size: 28px;
+    font-weight: 600;
+    margin: 0;
+    letter-spacing: -0.5px;
+}
+
+/* Uptime Overview */
+.uptime-overview {
+    text-align: right;
+    margin-bottom: 25px;
+}
+
+.uptime-text {
+    color: #6b7280;
+    font-size: 14px;
+    margin: 0;
+}
+
+.uptime-link {
+    color: #3b82f6;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.uptime-link:hover {
+    text-decoration: underline;
+}
+
+/* Service Cards */
+.service-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.service-card {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Service Header */
+.service-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.service-icon {
+    width: 24px;
+    height: 24px;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #6b7280;
+    cursor: pointer;
+}
+
+.service-name {
+    flex: 1;
+    font-size: 18px;
+    font-weight: 600;
+    color: #374151;
+    margin: 0;
+}
+
+.service-status {
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.service-status.operational {
+    background: #dcfce7;
+    color: #166534;
+}
+
+/* Uptime Chart */
+.uptime-chart {
+    position: relative;
+}
+
+.chart-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 12px;
+    color: #6b7280;
+}
+
+.chart-uptime {
+    font-weight: 600;
+    color: #374151;
+}
+
+/* Chart Bars */
+.chart-bars {
+    height: 40px;
+    background: #f9fafb;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: end;
+    padding: 2px;
+}
+
+.chart-bars::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: repeating-linear-gradient(
+        to right,
+        #4CAF50 0%,
+        #4CAF50 2px,
+        #4CAF50 2px,
+        #4CAF50 4px
+    );
+    background-size: 4px 100%;
+    opacity: 0.9;
+}
+
+/* Generate many small bars for the chart effect */
+.chart-bars::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    background: repeating-linear-gradient(
+        to right,
+        #4CAF50 0px,
+        #4CAF50 1px,
+        #4CAF50 1px,
+        #4CAF50 2px
+    );
+    background-size: 2px 100%;
+    border-radius: 2px;
+}
+
+/* Past Incidents Section */
+.past-incidents {
+    margin-top: 50px;
+}
+
+.incidents-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #374151;
+    margin: 0 0 30px 0;
+    letter-spacing: -0.5px;
+}
+
+.incidents-list {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.incident-entry {
+    padding: 20px 24px;
+    border-bottom: 1px solid #f3f4f6;
+}
+
+.incident-entry:last-child {
+    border-bottom: none;
+}
+
+.incident-date {
+    font-size: 16px;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 4px;
+    letter-spacing: -0.2px;
+}
+
+.incident-message {
+    font-size: 14px;
+    color: #6b7280;
+    line-height: 1.4;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .status {
+        padding: 20px 15px;
+    }
+    
+    .status-banner {
+        padding: 16px 20px;
+    }
+    
+    .status-title {
+        font-size: 24px;
+    }
+    
+    .service-card {
+        padding: 16px;
+    }
+    
+    .service-name {
+        font-size: 16px;
+    }
+    
+    .chart-info {
+        font-size: 11px;
+    }
+    
+    .incidents-title {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .incident-entry {
+        padding: 16px 20px;
+    }
+    
+    .incident-date {
+        font-size: 15px;
+    }
+    
+    .incident-message {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .status {
+        padding: 16px 12px;
+    }
+    
+    .service-header {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    
+    .service-status {
+        order: -1;
+        margin-left: auto;
+    }
+    
+    .incidents-title {
+        font-size: 18px;
+        margin-bottom: 16px;
+    }
+    
+    .incident-entry {
+        padding: 14px 16px;
+    }
+    
+    .incident-date {
+        font-size: 14px;
+    }
+    
+    .incident-message {
+        font-size: 12px;
+    }
+}
+
+/* Status Footer */
+.status-footer {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #e5e7eb;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.footer-left {
+    flex: 1;
+}
+
+.incident-status {
+    color: #3b82f6;
+    font-weight: 500;
+}
+
+.footer-right {
+    flex: 1;
+    text-align: right;
+}
+
+.powered-by-link {
+    color: #6b7280;
+    text-decoration: none;
+    font-weight: 400;
+    transition: color 0.2s ease;
+}
+
+.powered-by-link:hover {
+    color: #374151;
+    text-decoration: underline;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    .status-footer {
+        margin-top: 30px;
+        padding-top: 16px;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+    
+    .footer-right {
+        text-align: center;
+    }
+    
+    .incident-status,
+    .powered-by-link {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .status-footer {
+        margin-top: 24px;
+        padding-top: 12px;
+    }
+    
+    .footer-content {
+        gap: 8px;
+    }
+    
+    .incident-status,
+    .powered-by-link {
+        font-size: 12px;
+    }
+}

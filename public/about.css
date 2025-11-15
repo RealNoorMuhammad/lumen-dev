@@ -1,0 +1,812 @@
+/* About Hero Section */
+.about-hero {
+    background: #1a1a2e;
+    padding: 120px 20px 80px;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.about-hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.about-hero-content {
+    color: white;
+}
+
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 24px;
+    font-size: 14px;
+}
+
+.breadcrumb-link {
+    color: #9aa4b2;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.breadcrumb-link:hover {
+    color: white;
+}
+
+.breadcrumb-separator {
+    color: #9aa4b2;
+}
+
+.breadcrumb-current {
+    color: #9aa4b2;
+}
+
+.about-hero-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 24px;
+    line-height: 1.1;
+}
+
+.about-hero-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: white;
+    max-width: 500px;
+}
+
+.about-hero-visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.about-hero-image {
+    max-width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: contain;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .about-hero-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+    
+    .about-hero-title {
+        font-size: 3rem;
+    }
+    
+    .about-hero-description {
+        max-width: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-hero {
+        padding: 100px 20px 60px;
+        min-height: 70vh;
+    }
+    
+    .about-hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .about-hero-description {
+        font-size: 1.1rem;
+    }
+}
+
+/* Milestones & Achievements Section */
+.milestones-section {
+    background: white;
+    padding: 80px 20px;
+}
+
+.milestones-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.milestones-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    margin-bottom: 80px;
+    align-items: center;
+}
+
+.milestones-content {
+    color: #333;
+}
+
+.milestones-overline {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.6px;
+    color: #9aa4b2;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+}
+
+.milestones-title {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #0f1419;
+    margin-bottom: 24px;
+    line-height: 1.1;
+}
+
+.milestones-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #4b5563;
+    margin-bottom: 16px;
+}
+
+.milestones-hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.milestones-image {
+    max-width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: contain;
+}
+
+.timeline-container {
+    margin-top: 60px;
+}
+
+.timeline-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 28px;
+}
+
+.timeline-year {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 100%);
+    border-radius: 16px;
+    padding: 28px;
+    border: 1px solid rgba(124, 58, 237, 0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.timeline-year::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #7c3aed, #3b82f6, #8b5cf6);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.timeline-year:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(124, 58, 237, 0.15);
+    border-color: rgba(124, 58, 237, 0.3);
+}
+
+.timeline-year:hover::before {
+    opacity: 1;
+}
+
+.year-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 20px;
+    padding-bottom: 16px;
+    border-bottom: 2px solid rgba(124, 58, 237, 0.1);
+}
+
+.trophy-icon {
+    font-size: 24px;
+    filter: drop-shadow(0 2px 4px rgba(124, 58, 237, 0.3));
+    animation: subtle-bounce 2s ease-in-out infinite;
+}
+
+@keyframes subtle-bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-3px);
+    }
+}
+
+.year-title {
+    font-size: 1.75rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #7c3aed, #3b82f6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0;
+    letter-spacing: -0.5px;
+}
+
+.year-achievements {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.year-achievements li {
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 12px;
+    color: #374151;
+    line-height: 1.7;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+}
+
+.year-achievements li:hover {
+    color: #1f2937;
+}
+
+.year-achievements li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(135deg, #7c3aed, #8b5cf6);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: bold;
+    box-shadow: 0 2px 6px rgba(124, 58, 237, 0.3);
+}
+
+/* Responsive Design for Milestones */
+@media (max-width: 1024px) {
+    .milestones-header {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+    
+    .milestones-title {
+        font-size: 2.5rem;
+    }
+    
+    .timeline-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .milestones-section {
+        padding: 60px 20px;
+    }
+    
+    .milestones-title {
+        font-size: 2rem;
+    }
+    
+    .milestones-description {
+        font-size: 1rem;
+    }
+    
+    .timeline-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .timeline-year {
+        padding: 20px;
+    }
+}
+
+/* Core Crew Section */
+.crew-section {
+    background: #f3f5fa;
+    padding: 40px 20px 80px;
+}
+
+.crew-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    background: #ffffff;
+    border: 1px solid #e9ecef;
+    border-radius: 20px;
+    padding: 32px 20px 48px;
+}
+
+.crew-overline {
+    color: #9aa4b2;
+    font-weight: 700;
+    letter-spacing: 1.6px;
+    margin-bottom: 6px;
+}
+
+.crew-title {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #0f1419;
+    margin-bottom: 24px;
+}
+
+.crew-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 24px;
+}
+
+.crew-card { text-align: center; }
+
+.crew-avatar {
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 10px;
+    border-radius: 50%;
+    background: #e9e9ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.crew-avatar img { width: 100%; height: 100%; object-fit: cover; }
+
+.crew-name { font-weight: 700; color: #0f1419; font-size: 0.98rem; }
+.crew-role { color: #6b7280; font-size: 0.9rem; }
+
+@media (max-width: 900px) {
+    .crew-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 520px) {
+    .crew-grid { grid-template-columns: 1fr; }
+}
+
+/* Careers Section */
+.careers-section {
+    background: #1a1a2e;
+    padding: 80px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.careers-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 200px;
+    background: linear-gradient(135deg, #7c3aed, #3b82f6);
+    opacity: 0.1;
+    border-radius: 50%;
+    transform: translate(50%, -50%);
+}
+
+.careers-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.careers-content {
+    color: white;
+}
+
+.careers-title {
+    font-size: 3rem;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 24px;
+    line-height: 1.1;
+}
+
+.careers-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: white;
+    margin-bottom: 32px;
+    max-width: 500px;
+}
+
+.careers-button {
+    background: #7c3aed;
+    color: white;
+    border: none;
+    padding: 16px 32px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.careers-button:hover {
+    background: #6d28d9;
+}
+
+.careers-visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.careers-image {
+    max-width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+/* Responsive Design for Careers */
+@media (max-width: 1024px) {
+    .careers-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+    
+    .careers-title {
+        font-size: 2.5rem;
+    }
+    
+    .careers-description {
+        max-width: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .careers-section {
+        padding: 60px 20px;
+    }
+    
+    .careers-title {
+        font-size: 2rem;
+    }
+    
+    .careers-description {
+        font-size: 1rem;
+    }
+}
+
+/* Careers Modal Styles */
+.careers-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    overflow-y: auto;
+}
+
+.careers-modal.active {
+    display: flex;
+}
+
+.careers-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(4px);
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.careers-modal-content {
+    position: relative;
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    animation: slideUp 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.careers-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 32px;
+    border-bottom: 1px solid #e9ecef;
+    background: linear-gradient(135deg, #7c3aed 0%, #3b82f6 100%);
+    color: white;
+}
+
+.careers-modal-title {
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 0;
+    color: white;
+}
+
+.careers-modal-close {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    font-size: 32px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    line-height: 1;
+    padding: 0;
+}
+
+.careers-modal-close:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: rotate(90deg);
+}
+
+.careers-modal-body {
+    padding: 32px;
+    overflow-y: auto;
+    flex: 1;
+}
+
+.careers-modal-intro {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #4b5563;
+    margin-bottom: 32px;
+    padding-bottom: 24px;
+    border-bottom: 2px solid #f3f4f6;
+}
+
+.jobs-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.job-card {
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 12px;
+    padding: 24px;
+    transition: all 0.3s ease;
+}
+
+.job-card:hover {
+    border-color: #7c3aed;
+    box-shadow: 0 4px 12px rgba(124, 58, 237, 0.15);
+    transform: translateY(-2px);
+}
+
+.job-header {
+    margin-bottom: 12px;
+}
+
+.job-title-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.job-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #0f1419;
+    margin: 0 0 8px 0;
+}
+
+.job-badges {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.job-badge {
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.job-badge.job-type {
+    background: linear-gradient(135deg, #7c3aed, #8b5cf6);
+    color: white;
+}
+
+.job-badge.job-location {
+    background: #e0e7ff;
+    color: #7c3aed;
+}
+
+.job-department {
+    font-size: 0.9rem;
+    color: #6b7280;
+    margin: 0 0 16px 0;
+    font-weight: 500;
+}
+
+.job-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #374151;
+    margin-bottom: 16px;
+}
+
+.job-requirements {
+    margin-top: 16px;
+    margin-bottom: 20px;
+}
+
+.job-requirements strong {
+    color: #0f1419;
+    font-size: 0.95rem;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.job-requirements ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.job-requirements li {
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 8px;
+    color: #4b5563;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.job-requirements li::before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: #7c3aed;
+    font-weight: bold;
+}
+
+.job-apply-btn {
+    background: linear-gradient(135deg, #7c3aed, #3b82f6);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    margin-top: 8px;
+}
+
+.job-apply-btn:hover {
+    background: linear-gradient(135deg, #6d28d9, #2563eb);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(124, 58, 237, 0.3);
+}
+
+.careers-modal-footer {
+    margin-top: 32px;
+    padding-top: 24px;
+    border-top: 2px solid #f3f4f6;
+}
+
+.careers-modal-note {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #6b7280;
+    text-align: center;
+    margin: 0;
+}
+
+.careers-contact-link {
+    color: #7c3aed;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.careers-contact-link:hover {
+    color: #6d28d9;
+    text-decoration: underline;
+}
+
+/* Responsive Design for Modal */
+@media (max-width: 768px) {
+    .careers-modal-content {
+        width: 95%;
+        margin: 20px auto;
+        max-height: 95vh;
+        border-radius: 16px;
+    }
+
+    .careers-modal-header {
+        padding: 20px 24px;
+    }
+
+    .careers-modal-title {
+        font-size: 1.5rem;
+    }
+
+    .careers-modal-body {
+        padding: 24px 20px;
+    }
+
+    .job-card {
+        padding: 20px;
+    }
+
+    .job-title {
+        font-size: 1.25rem;
+    }
+
+    .job-title-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
